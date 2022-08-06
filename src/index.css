@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl md:text-4xl;
+  }
+  h2 {
+    @apply text-xl sm:text-3xl text-white;
+  }
+  h3 {
+    @apply text-lg sm:text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+  h5 {
+    @apply text-lg;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-semibold;
+  }
+  .btn {
+    @apply w-4/12 h-full font-semibold text-white todo-button rounded-r-md;
+  }
+  .todo-button {
+    @apply bg-gradient-to-r from-[#5D0CFF] to-[#9B00FA];
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
